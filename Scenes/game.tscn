@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://c470st5n3yqhl"]
+
+[ext_resource type="Texture2D" uid="uid://dxwe5svnw6vf4" path="res://Assets/Background/Gemini_Generated_Image_3u0dyg3u0dyg3u0d.jpg" id="1_ebmjs"]
+[ext_resource type="Script" uid="uid://bwtywe7y5cupa" path="res://Scenes/game.gd" id="1_qxrlw"]
+[ext_resource type="Script" uid="uid://dd5mcxyb6xry7" path="res://Scenes/text_edit.gd" id="3_wrm1d"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_qxrlw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(0.681818, 0.703125)
+texture = ExtResource("1_ebmjs")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 391.0
+offset_top = 232.0
+offset_right = 1560.0
+offset_bottom = 815.0
+theme_override_colors/current_line_color = Color(1, 1, 1, 1)
+theme_override_colors/background_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0.0270768, 0.249256, 0.935937, 1)
+theme_override_colors/caret_color = Color(0.752941, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+scroll_smooth = true
+caret_blink = true
+script = ExtResource("3_wrm1d")
+
+[connection signal="letter_entered" from="TextEdit" to="." method="_on_text_edit_letter_entered"]
