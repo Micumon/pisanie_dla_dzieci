@@ -2,41 +2,76 @@ extends Node2D
 class_name LetterAnimation
 
 #region Preload letters
-const B = preload("res://Assets/Letters/B.png")
-const Ć = preload("res://Assets/Letters/Ć.PNG")
-const D = preload("res://Assets/Letters/D.PNG")
-const E = preload("res://Assets/Letters/E.PNG")
-const F = preload("res://Assets/Letters/F.PNG")
-const G = preload("res://Assets/Letters/G.PNG")
-const H = preload("res://Assets/Letters/H.PNG")
-const I = preload("res://Assets/Letters/I.PNG")
-const J = preload("res://Assets/Letters/J.PNG")
-const K = preload("res://Assets/Letters/K.PNG")
-const L = preload("res://Assets/Letters/L.PNG")
-const M = preload("res://Assets/Letters/M.PNG")
-const N = preload("res://Assets/Letters/N.PNG")
-const O = preload("res://Assets/Letters/O.PNG")
-const P = preload("res://Assets/Letters/P.PNG")
-const Q = preload("res://Assets/Letters/Q.PNG")
-const R = preload("res://Assets/Letters/R.PNG")
-const S = preload("res://Assets/Letters/S.PNG")
-const T = preload("res://Assets/Letters/T.PNG")
-const U = preload("res://Assets/Letters/U.PNG")
-const V = preload("res://Assets/Letters/V.PNG")
-const W = preload("res://Assets/Letters/W.PNG")
-const X = preload("res://Assets/Letters/X.PNG")
-const Y = preload("res://Assets/Letters/Y.PNG")
-const Z = preload("res://Assets/Letters/Z.PNG")
-const Ó = preload("res://Assets/Letters/Ó.PNG")
-const Ą = preload("res://Assets/Letters/Ą.png")
-const Ę = preload("res://Assets/Letters/Ę.PNG")
-const Ł = preload("res://Assets/Letters/Ł.PNG")
-const Ń = preload("res://Assets/Letters/Ń.PNG")
-const Ś = preload("res://Assets/Letters/Ś.PNG")
-const Ź = preload("res://Assets/Letters/Ź.PNG")
-const Ż = preload("res://Assets/Letters/Ż.PNG")
-const A = preload("res://Assets/Letters/A.png")
-const C = preload("res://Assets/Letters/C.png")
+const B = preload("res://Assets/letters/uppercase/B.png")
+const Ć = preload("res://Assets/letters/uppercase/Ć.PNG")
+const D = preload("res://Assets/letters/uppercase/D.PNG")
+const E = preload("res://Assets/letters/uppercase/E.PNG")
+const F = preload("res://Assets/letters/uppercase/F.PNG")
+const G = preload("res://Assets/letters/uppercase/G.PNG")
+const H = preload("res://Assets/letters/uppercase/H.PNG")
+const I = preload("res://Assets/letters/uppercase/I.PNG")
+const J = preload("res://Assets/letters/uppercase/J.PNG")
+const K = preload("res://Assets/letters/uppercase/K.PNG")
+const L = preload("res://Assets/letters/uppercase/L.PNG")
+const M = preload("res://Assets/letters/uppercase/M.PNG")
+const N = preload("res://Assets/letters/uppercase/N.PNG")
+const O = preload("res://Assets/letters/uppercase/O.PNG")
+const P = preload("res://Assets/letters/uppercase/P.PNG")
+const Q = preload("res://Assets/letters/uppercase/Q.PNG")
+const R = preload("res://Assets/letters/uppercase/R.PNG")
+const S = preload("res://Assets/letters/uppercase/S.PNG")
+const T = preload("res://Assets/letters/uppercase/T.PNG")
+const U = preload("res://Assets/letters/uppercase/U.PNG")
+const V = preload("res://Assets/letters/uppercase/V.PNG")
+const W = preload("res://Assets/letters/uppercase/W.PNG")
+const X = preload("res://Assets/letters/uppercase/X.PNG")
+const Y = preload("res://Assets/letters/uppercase/Y.PNG")
+const Z = preload("res://Assets/letters/uppercase/Z.PNG")
+const Ó = preload("res://Assets/letters/uppercase/Ó.PNG")
+const Ą = preload("res://Assets/letters/uppercase/Ą.png")
+const Ę = preload("res://Assets/letters/uppercase/Ę.PNG")
+const Ł = preload("res://Assets/letters/uppercase/Ł.PNG")
+const Ń = preload("res://Assets/letters/uppercase/Ń.PNG")
+const Ś = preload("res://Assets/letters/uppercase/Ś.PNG")
+const Ź = preload("res://Assets/letters/uppercase/Ź.PNG")
+const Ż = preload("res://Assets/letters/uppercase/Ż.PNG")
+const A = preload("res://Assets/letters/uppercase/A.png")
+const C = preload("res://Assets/letters/uppercase/C.png")
+const a = preload("res://assets/letters/lowercase/a.png")
+const b = preload("res://assets/letters/lowercase/b.png")
+const c = preload("res://assets/letters/lowercase/c.png")
+const d = preload("res://assets/letters/lowercase/d.png")
+const e = preload("res://assets/letters/lowercase/e.png")
+const f = preload("res://assets/letters/lowercase/f.png")
+const g = preload("res://assets/letters/lowercase/g.png")
+const h = preload("res://assets/letters/lowercase/h.png")
+const i = preload("res://assets/letters/lowercase/i.png")
+const j = preload("res://assets/letters/lowercase/j.png")
+const k = preload("res://assets/letters/lowercase/k.png")
+const l = preload("res://assets/letters/lowercase/l.png")
+const m = preload("res://assets/letters/lowercase/m.png")
+const n = preload("res://assets/letters/lowercase/n.png")
+const o = preload("res://assets/letters/lowercase/o.png")
+const p = preload("res://assets/letters/lowercase/p.png")
+const q = preload("res://assets/letters/lowercase/q.png")
+const r = preload("res://assets/letters/lowercase/r.png")
+const s = preload("res://assets/letters/lowercase/s.png")
+const t = preload("res://assets/letters/lowercase/t.png")
+const u = preload("res://assets/letters/lowercase/u.png")
+const v = preload("res://assets/letters/lowercase/v.png")
+const w = preload("res://assets/letters/lowercase/w.png")
+const x = preload("res://assets/letters/lowercase/x.png")
+const y = preload("res://assets/letters/lowercase/y.png")
+const z = preload("res://assets/letters/lowercase/z.png")
+const ó = preload("res://assets/letters/lowercase/ó.png")
+const ą = preload("res://assets/letters/lowercase/ą.png")
+const ć = preload("res://assets/letters/lowercase/ć.png")
+const ę = preload("res://assets/letters/lowercase/ę.png")
+const ł = preload("res://assets/letters/lowercase/ł.png")
+const ń = preload("res://assets/letters/lowercase/ń.png")
+const ś = preload("res://assets/letters/lowercase/ś.png")
+const ź = preload("res://assets/letters/lowercase/ź.png")
+const ż = preload("res://assets/letters/lowercase/ż.png")
 #endregion
 
 #region Preloded sounds
@@ -121,41 +156,41 @@ const CONST_MAP_L = {
 "Ś": Ś,
 "Ź": Ź,
 "Ż": Ż,
-#"a": a,
-#"b": b,
-#"c": c,
-#"d": d,
-#"e": e,
-#"f": f,
-#"g": g,
-#"h": h,
-#"i": i,
-#"j": j,
-#"k": k,
-#"l": l,
-#"m": m,
-#"n": n,
-#"o": o,
-#"p": p,
-#"q": q,
-#"r": r,
-#"s": s,
-#"t": t,
-#"u": u,
-#"v": v,
-#"w": w,
-#"x": x,
-#"y": y,
-#"z": z,
-#"ó": ó,
-#"ą": ą,
-#"ć": ć,
-#"ę": ę,
-#"ł": ł,
-#"ń": ń,
-#"ś": ś,
-#"ź": ź,
-#"ż": ż
+"a": a,
+"b": b,
+"c": c,
+"d": d,
+"e": e,
+"f": f,
+"g": g,
+"h": h,
+"i": i,
+"j": j,
+"k": k,
+"l": l,
+"m": m,
+"n": n,
+"o": o,
+"p": p,
+"q": q,
+"r": r,
+"s": s,
+"t": t,
+"u": u,
+"v": v,
+"w": w,
+"x": x,
+"y": y,
+"z": z,
+"ó": ó,
+"ą": ą,
+"ć": ć,
+"ę": ę,
+"ł": ł,
+"ń": ń,
+"ś": ś,
+"ź": ź,
+"ż": ż
 }
 const CONST_MAP_S = {
 "A": A_s,
